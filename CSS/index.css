@@ -1,0 +1,110 @@
+body{
+    background-color: rgba(101, 83, 255, 0.541);
+}
+
+
+/*nose xdd*/
+.nose{
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+/*boton redireccionar*/
+.cambiar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cambiar button{
+    border: none;
+    height: 3.125rem;
+    position: relative;
+    width: 12.5rem;
+    font-size: 1.375rem;
+    transition: .3s linear;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background-color: #609efc;
+    box-shadow: 0 0 0.3125rem #609efc, 0 0 1.5625rem #609efc, 0 0 3.125rem #609efc, 0 0 6.25rem #609efc, 0 0 18.75rem #609efc;
+}
+
+
+/*Preloader (cosita de cargar)*/
+.loader{
+    height: 100vh;
+    background-color: rgba(101, 83, 255, 0.541);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/*esconder las cosas xd*/
+.hidden{
+    overflow: hidden;
+}
